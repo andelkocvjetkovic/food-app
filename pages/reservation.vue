@@ -14,9 +14,15 @@
       <form
         name="reservation"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
         class="py-12"
         @submit.prevent="handleSubmit(onSubmit)"
       >
+        <input
+          type="hidden"
+          name="form-reservation"
+          value="reservation"
+        />
         <fieldset class="mt-12">
           <legend class="text-xl">
             Name <span aria-hidden="true" class="text-base">*</span>
