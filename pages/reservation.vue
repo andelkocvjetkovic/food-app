@@ -12,17 +12,14 @@
     </section>
     <validation-observer v-slot="{ handleSubmit }">
       <form
+        ref="myform"
         name="reservation"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         class="py-12"
         @submit.prevent="handleSubmit(onSubmit)"
       >
-        <input
-          type="hidden"
-          name="form-reservation"
-          value="reservation"
-        />
+        <input type="hidden" name="form-name" value="reservation" />
         <fieldset class="mt-12">
           <legend class="text-xl">
             Name <span aria-hidden="true" class="text-base">*</span>
@@ -245,15 +242,17 @@ export default {
     };
   },
   methods: {
-    async onSubmit() {
-      var encodeData = this.encode(this.form);
+    async onSubmit(e) {
       try {
         await fetch("/", {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },
-          body: encodeData,
+          body: this.encode({
+            "form-name": this.$refs.myform.getAttribute("namme"),
+            ...this.form,
+          }),
         });
         alert(
           "Your reservation has been sucessfuly sent. Thank you "
