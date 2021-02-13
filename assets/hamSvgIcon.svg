@@ -1,0 +1,34 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 35.19 16.61"
+  aria-labelledby="icon-ham"
+>
+  <title id="icon-ham">Icon NavBar</title>
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="menu">
+    <rect
+      id="secound"
+      class="cls-1"
+      x="1"
+      y="1"
+      width="33.19"
+      height="2.71"
+    />
+    <rect
+      id="first"
+      class="cls-1"
+      x="8.52"
+      y="12.9"
+      width="25.33"
+      height="2.71"
+    />
+  </g>
+</svg>

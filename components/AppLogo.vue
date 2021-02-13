@@ -1,0 +1,26 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 287 73"
+    aria-labelledby="logo-brummyz"
+  >
+    <title id="logo-brummyz">Brumyzzzz</title>
+    <text
+      transform="translate(51.73 46.87)"
+      font-size="54"
+      font-family="Rockwell-Condensed,Rockwell Condensed"
+      letter-spacing="-.03em"
+    >
+      B
+      <tspan x="21.59" y="0" letter-spacing="0">r</tspan>
+      <tspan x="36.9" y="0">um</tspan>
+      <tspan x="84.55" y="0" letter-spacing="-.06em">m</tspan>
+      <tspan x="110.99" y="0">yzzz</tspan>
+    </text>
+  </svg>
+</template>
+<style lang="postcss" scoped>
+svg {
+  @apply font-normal !important;
+}
+</style>
