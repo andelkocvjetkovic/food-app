@@ -2,7 +2,7 @@
   <header
     class="px-2 py-4 flex justify-center items-center relative z-10 md:py-6 lg:items-center lg:justify-between lg:px-8 lg:font-sans lg:uppercase lg:py-4 xl:px-12 2xl:px-16"
   >
-    <nuxt-link to="/" class="w-1/2 lg:w-1/4">
+    <nuxt-link to="/" class="w-1/2 lg:w-1/4 focus:outline-none">
       <app-logo class="block w-full h-full"></app-logo>
     </nuxt-link>
     <!-- just for mobile -->
@@ -32,14 +32,24 @@
           @click="closeModal"
         >
           <li>
-            <nuxt-link to="/">Home</nuxt-link>
-          </li>
-          <li><nuxt-link to="/menu">Menu</nuxt-link></li>
-          <li>
-            <nuxt-link to="/reservation">Reservation</nuxt-link>
+            <nuxt-link class="focus:outline-none" to="/"
+              >Home</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link to="/team">Our Team</nuxt-link>
+            <nuxt-link class="focus:outline-none" to="/menu"
+              >Menu</nuxt-link
+            >
+          </li>
+          <li>
+            <nuxt-link class="focus:outline-none" to="/reservation"
+              >Reservation</nuxt-link
+            >
+          </li>
+          <li>
+            <nuxt-link class="focus:outline-none" to="/team"
+              >Our Team</nuxt-link
+            >
           </li>
         </ul>
       </nav>
@@ -65,7 +75,9 @@
         @mouseenter.stop="mouseOver"
         @mouseleave.stop="mouseLeave"
       >
-        <nuxt-link to="/menu">Menu</nuxt-link>
+        <nuxt-link class="focus:outline-none" to="/menu"
+          >Menu</nuxt-link
+        >
         <div
           role="presentation"
           class="w-full h-px absolute bottom-0 bg-black opacity-0 invisible transform scale-x-0"
@@ -79,7 +91,9 @@
         @mouseenter.stop="mouseOver"
         @mouseleave.stop="mouseLeave"
       >
-        <nuxt-link to="/reservation">Reservation</nuxt-link>
+        <nuxt-link class="focus:outline-none" to="/reservation"
+          >Reservation</nuxt-link
+        >
         <div
           role="presentation"
           class="w-full h-px absolute bottom-0 bg-black opacity-0 invisible transform scale-x-0"
@@ -91,7 +105,9 @@
         @mouseenter.stop="mouseOver"
         @mouseleave.stop="mouseLeave"
       >
-        <nuxt-link to="/team">Team</nuxt-link>
+        <nuxt-link class="focus:outline-none" to="/team"
+          >Team</nuxt-link
+        >
         <div
           role="presentation"
           class="w-full h-px absolute bottom-0 bg-black opacity-0 invisible transform scale-x-0"

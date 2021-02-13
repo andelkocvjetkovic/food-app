@@ -1,26 +1,22 @@
 <template>
   <svg
+    id="Layer_1"
+    data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 287 73"
+    viewBox="0 0 144 30.55"
     aria-labelledby="logo-brummyz"
   >
     <title id="logo-brummyz">Brumyzzzz</title>
-    <text
-      transform="translate(51.73 46.87)"
-      font-size="54"
-      font-family="Rockwell-Condensed,Rockwell Condensed"
-      letter-spacing="-.03em"
-    >
-      B
-      <tspan x="21.59" y="0" letter-spacing="0">r</tspan>
-      <tspan x="36.9" y="0">um</tspan>
-      <tspan x="84.55" y="0" letter-spacing="-.06em">m</tspan>
-      <tspan x="110.99" y="0">yzzz</tspan>
-    </text>
+    <text class="cls-1" transform="translate(0 22.58)">BRUMYZZZ</text>
   </svg>
 </template>
 <style lang="postcss" scoped>
 svg {
   @apply font-normal !important;
+}
+.cls-1 {
+  font-size: 27px;
+  font-family: Sylfaen;
+  letter-spacing: -0.02em;
 }
 </style>
