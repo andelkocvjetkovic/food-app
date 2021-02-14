@@ -40,7 +40,7 @@
         <a href="#">Twitter</a>
       </section>
       <div class="text-gray-100 text-center">
-        Powerd by Andelko Cvjetkvic
+        Powerd by Andelko Cvjetkovic
       </div>
     </article>
   </footer>

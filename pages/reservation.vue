@@ -250,7 +250,7 @@ export default {
             "Content-Type": "application/x-www-form-urlencoded",
           },
           body: this.encode({
-            "form-name": this.$refs.myform.getAttribute("namme"),
+            "form-name": this.$refs.myform.getAttribute("name"),
             ...this.form,
           }),
         });
