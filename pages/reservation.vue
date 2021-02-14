@@ -190,7 +190,7 @@
           <validation-provider
             v-slot="{ errors }"
             mode="eager"
-            name="nmbGuests"
+            name="Number of Guests"
             rules="positive|required"
           >
             <label class="block text-xl" for="nmbGuests"
@@ -201,7 +201,7 @@
               id="nmbGuests"
               v-model="form.numberOfGuests"
               class="mt-4 block w-full p-2 bg-gray-100 ring-1 ring-gray-200"
-              type="nmbGuests"
+              type="text"
               name="nmbGuests"
             />
             <span class="block text-sm text-red-500">{{
@@ -230,7 +230,6 @@ export default {
   data() {
     return {
       form: {
-        numberOfGuests: "",
         firstName: "",
         lastName: "",
         emailAddres: "",
@@ -238,6 +237,7 @@ export default {
         day: "",
         month: "",
         year: "",
+        numberOfGuests: "",
       },
     };
   },
