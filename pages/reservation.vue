@@ -103,7 +103,7 @@
             rules="email"
             name="Email address"
           >
-            <label class="block text-xl" for="email"
+            <label class="block text-xl" for="emailAddres"
               >Email address</label
             >
             <input
@@ -111,7 +111,7 @@
               v-model="form.emailAddres"
               class="mt-4 block w-full p-2 bg-gray-100 ring-1 ring-gray-200"
               type="email"
-              name="email"
+              name="emailAddres"
             />
             <span class="block text-sm text-red-500">{{
               errors[0]
@@ -193,16 +193,16 @@
             name="Number of Guests"
             rules="positive|required"
           >
-            <label class="block text-xl" for="nmbGuests"
+            <label class="block text-xl" for="numberOfGuests"
               >Number of Guests
               <span class="text-base">*</span></label
             >
             <input
-              id="nmbGuests"
+              id="numberOfGuests"
               v-model="form.numberOfGuests"
               class="mt-4 block w-full p-2 bg-gray-100 ring-1 ring-gray-200"
               type="text"
-              name="nmbGuests"
+              name="numberOfGuests"
             />
             <span class="block text-sm text-red-500">{{
               errors[0]
@@ -254,6 +254,7 @@ export default {
             ...this.form,
           }),
         });
+        console.log(this.encode(this.form));
         alert(
           "Your reservation has been sucessfuly sent. Thank you "
         );
