@@ -42,5 +42,6 @@ body {
 
 .nuxt-link-exact-active {
   @apply font-bold;
+  @apply italic;
 }
 </style>

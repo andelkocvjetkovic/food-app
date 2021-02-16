@@ -13,6 +13,7 @@
 <style lang="postcss" scoped>
 svg {
   @apply font-normal !important;
+  @apply not-italic  !important;
 }
 .cls-1 {
   font-size: 27px;

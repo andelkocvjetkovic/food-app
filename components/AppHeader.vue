@@ -55,7 +55,7 @@
       </nav>
     </transition>
     <ul
-      class="hidden lg:flex order-first space-x-6 font-medium xl:text-xl"
+      class="hidden lg:flex lg:w-1/6 order-first space-x-6 font-medium xl:text-xl"
     >
       <li
         class="relative"
@@ -84,7 +84,9 @@
         ></div>
       </li>
     </ul>
-    <ul class="hidden lg:flex space-x-6 xl:text-xl font-medium">
+    <ul
+      class="hidden lg:flex lg:w-1/6 lg:justify-end space-x-6 xl:text-xl font-medium"
+    >
       <li
         class="relative"
         @dragstart.prevent.stop
